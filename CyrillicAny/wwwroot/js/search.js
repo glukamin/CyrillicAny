@@ -4,7 +4,7 @@
         $(this).validate();
 
         if (!$(this).valid()) {
-            return ;
+            return;
         }
 
         $("#nyTimes").html("");
