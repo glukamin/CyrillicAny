@@ -4,7 +4,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Search any text</h1>
+    <h1>Search any text within NY articles</h1>
 
 @using (Html.BeginForm(null, null, FormMethod.Post,
     new { @action = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" }))
