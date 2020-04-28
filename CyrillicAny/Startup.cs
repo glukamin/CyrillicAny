@@ -48,10 +48,6 @@ namespace CyrillicAny
 			app.UseAuthorization();
 			app.UseEndpoints(endpoints =>
 			{
-				endpoints.MapControllerRoute(name: "any-api",
-					pattern: "any-api.com/{*search}",
-					defaults: new { controller = "Search", action = "PerformSearch" });
-
 				endpoints.MapControllerRoute(
 					name: "default",
 					pattern: "{controller=Home}/{action=Index}/{id?}");
